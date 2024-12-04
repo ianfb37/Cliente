@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let opcion=prompt("1.Salir 2.Sumatorio 3.Factorial");
+        var fac
+        if(opcion==1)
+        alert("Final del programa");
+       if(opcion==2){
+        let num1=prompt("Escribe el primer numero a sumar");
+        let num2=prompt("Escribe el segundo numero a sumar");
+        alert("El resultado de la suma de "+num1+"+"+num2+"="+num1+num2);
+    }
+        if(opcion==3){
+            let num3=prompt("Escribe el numero para hacer el factorial");
+        while(num3>=0){
+        
+        
+        fac=fac*num3;
+        num3--;
+        }
+    }
+        alert("El resultado del factorial es "+fac);
+        
+        </script>
+</body>
+</html>

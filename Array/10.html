@@ -1,0 +1,27 @@
+<script>
+    function operador(){
+
+        op=prompt(" Introduce un operador");
+        let ascii = op.charCodeAt(0);
+        ascii=ascii-1;
+        alert(ascii);
+        if (ascii > 41 && ascii < 48){
+            alert (op);
+        }
+   else{
+    alert("No");
+   }
+   ascii = num1.toUpperCase().charCodeAt(0);
+	
+   if (ascii > 64 && ascii < 91){
+        alert(num+" No es un numero");
+    }
+    else{
+        alert (num);
+
+    }
+    }
+    operador();
+
+
+</script>

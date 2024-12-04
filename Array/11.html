@@ -1,0 +1,49 @@
+<script>
+    let num1=prompt("Intruce el primer numero");
+    let num2 = prompt("Introduce el segundo numero");
+    function operador(num1,num2){
+
+op=prompt(" Introduce un operador");
+let ascii = op.charCodeAt(0);
+alert(ascii);
+if (((ascii > 41 && ascii < 44) ||ascii==45 || ascii==47)){
+    alert (op);
+    ascii = num1.toUpperCase().charCodeAt(0);
+ascii2 = num2.toUpperCase().charCodeAt(0);
+
+if (!(ascii > 0 && ascii < 128 && ascii2 > 0 && ascii2 < 128)){
+alert(num1+" No es un numero");
+}
+else{
+switch(op){
+    case '+':
+        resul=num1+num2;
+        document.write(resul);
+        break;
+    case '-':
+        resul=num1-num2;
+        document.write(resul);
+        break;
+    case '*':
+        resul=num1*num2;
+        document.write(resul);
+    break;
+    case'/':
+    resul=num1/num2;
+    document.write(resul);
+    break;
+    default:
+        document.write("Default");
+}
+
+
+}
+}
+else{
+alert("No");
+}
+
+}
+operador(num1,num2);
+
+</script>

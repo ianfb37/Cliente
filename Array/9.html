@@ -1,0 +1,16 @@
+<script>
+    
+    function Introduce(){
+    let num=(prompt("Introduce un numero"));
+    let ascii = num.toUpperCase().charCodeAt(0);
+	if (ascii > 64 && ascii < 91){
+        alert(num+" No es un numero");
+    }
+    else{
+        alert (num);
+
+    }
+}
+Introduce();
+
+</script>

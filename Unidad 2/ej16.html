@@ -1,0 +1,25 @@
+<script>
+  let num1, num2;
+
+// Solicitar los números hasta que ambos sean menores que 50
+do {
+    num1 = parseInt(prompt("Introduce el primer número entero:"));
+    num2 = parseInt(prompt("Introduce el segundo número entero:"));
+} while (num1 >= 50 || num2 >= 50);
+
+console.log(`Números iniciales: ${num1} y ${num2}`);
+
+// Determinar cuál es el menor y cuál es el mayor
+let menor = Math.min(num1, num2);
+let mayor = Math.max(num1, num2);
+
+while (menor <= mayor) {
+    console.log(`Menor: ${menor}, Mayor: ${mayor}`);
+    
+    // Incrementar el menor y decrementar el mayor
+    menor += 5;
+    mayor -= 2;
+}
+
+console.log(`Fin del programa. Los valores se han cruzado: Menor: ${menor}, Mayor: ${mayor}`);
+</script>
